@@ -11,8 +11,12 @@ class ContainerHome extends StatelessWidget {
             child: Column(
               children: [
                 Container(
-                  width: 25,
-                  height: 25,
+                  width: 85,
+                  height: 100,
+                  decoration: BoxDecoration(
+                    color: Colors.amber,
+                    borderRadius: BorderRadius.circular(7.0),
+                  ),
                 ),
                 Text(text),
               ],

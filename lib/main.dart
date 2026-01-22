@@ -81,8 +81,7 @@ class DevacctoProject extends StatelessWidget {
                       hintText: 'Search...',
                       prefixIcon: Icon(Icons.search),
                       border: OutlineInputBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(40.0)
-                      ),
+                        borderRadius: BorderRadius.all(Radius.circular(40.0)),
                       ),
                     ),
                   ),
@@ -96,26 +95,27 @@ class DevacctoProject extends StatelessWidget {
               fit: BoxFit.cover,
             ),
             Container(
+              padding: EdgeInsets.only(top: 25.0),
               width: 431,
-              height: 350,
+              height: 300,
               color: Colors.white,
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      ContainerHome(text: "contoh"),
-                      ContainerHome(text: "side dish"),
-                      ContainerHome(text: "contoh"),
+                      ContainerHome(text: "breakfast"),
+                      ContainerHome(text: "lunch"),
+                      ContainerHome(text: "dinner"),
                     ],
                   ),
                   Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      ContainerHome(text: "contoh"),
-                      ContainerHome(text: "side dish"),
-                      ContainerHome(text: "contoh"),
+                      ContainerHome(text: "salad"),
+                      ContainerHome(text: "drink"),
+                      ContainerHome(text: "soup"),
                     ],
                   )
                 ],
@@ -124,19 +124,29 @@ class DevacctoProject extends StatelessWidget {
           ],
         ),
         bottomNavigationBar: BottomNavigationBar(
+          type: BottomNavigationBarType.fixed,
+          backgroundColor: Color(0xFF5D866C),
           items: const <BottomNavigationBarItem>[
             BottomNavigationBarItem(
               icon: Icon(Icons.home),
               label: 'Home',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.business),
-              label: 'Business',
+              icon: Icon(Icons.favorite),
+              label: 'favorite',
+            ),
+            BottomNavigationBarItem(  
+              icon: Icon(Icons.add),
+              label: 'Share',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.school),
-              label: 'School',
+              icon: Icon(Icons.receipt),
+              label: 'recipe',
             ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.search),
+              label: 'More',
+            )
           ],
         ),
       ),
