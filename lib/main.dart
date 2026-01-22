@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '/screens/containerhome.dart';
 
 void main() {
   runApp(const DevacctoProject());
@@ -104,78 +105,17 @@ class DevacctoProject extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Container(
-                        child: Column(
-                          children: [
-                            Container(
-                              width: 25,
-                              height: 25,
-                            ),
-                            Text("contoh"),
-                          ],
-                        ),
-                      ),
-                      Container(
-                        child: Column(
-                          children: [
-                            Container(
-                              width: 25,
-                              height: 25,
-                            ),
-                            Text("contoh"),
-                          ],
-                        ),
-                      ),
-                      Container(
-                        child: Column(
-                          children: [
-                            Container(
-                              width: 25,
-                              height: 25,
-                            ),
-                            Text("contoh"),
-                          ],
-                        ),
-                      ),
+                      ContainerHome(text: "contoh"),
+                      ContainerHome(text: "side dish"),
+                      ContainerHome(text: "contoh"),
                     ],
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Container(
-                        child: Column(
-                          children: [
-                            Container(
-                              width: 25,
-                              height: 25,
-                            ),
-                            Text("contoh"),
-                          ],
-                        ),
-                      ),
-                      Container(
-                        child: Column(
-                          children: [
-                            Container(
-                              width: 25,
-                              height: 25,
-                            ),
-                            Text("contoh"),
-                          ],
-                        ),
-                      ),
-                      Container(
-                        child: Column(
-                          children: [
-                            Container(
-                              alignment: Alignment.center,
-                              width: 25,
-                              height: 25,
-                            ),
-                            Text("contoh"),
-                          ],
-                        ),
-                      ),
+                      ContainerHome(text: "contoh"),
+                      ContainerHome(text: "side dish"),
+                      ContainerHome(text: "contoh"),
                     ],
                   )
                 ],
